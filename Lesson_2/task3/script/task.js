@@ -7,6 +7,6 @@ const tav = total * 0.05; // 0.05 = 5% tav
 document.write(`
     <h1>
     Total = ${total}$ <br>
-    vat (ПДВ) = ${tav}$
+    tav (ПДВ) = ${tav}$
     </h1>
     `);
