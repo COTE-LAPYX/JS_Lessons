@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 4</title>
-    <script src="./script/task.js"></script>
 </head>
 <body>
-    <a href="../../index.html">go to Index page</a>
+<h1>Task 4</h1>
+<p>
+    Задача 4. Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+</p>
+<script>
+    const centimeters = parseFloat(prompt('length in centimeters=', '100'));
+    const meters = centimeters / 100;
+    const kilometers = meters / 1000;
+
+    document.write(`
+    <h1>
+    centimeters = ${centimeters}cm <br>
+    meters = ${meters}m <br>
+    kilometers = ${kilometers}km
+    </h1>
+    `);
+</script>
+<a href="../lesson.html">go back</a>
 </body>
 </html>

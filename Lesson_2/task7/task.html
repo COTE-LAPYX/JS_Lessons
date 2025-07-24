@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 7</title>
-    <script src="./script/task.js"></script>
 </head>
 <body>
-    <a href="../../index.html">go to Index page</a>
+<h1>Task 7</h1>
+<p>
+    Задача 7. Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).
+</p>
+<script>
+    const month = Math.floor(Math.random() * 12) + 1;
+    const day = Math.floor(Math.random() * 7);
+    const sum = month + day;
+
+    document.write(`
+    <h1>
+    Random month = ${month}<br>
+    Random day = ${day}<br>
+    sum = ${sum}
+    </h1>
+    `);
+</script>
+<a href="../lesson.html">go back</a>
 </body>
 </html>

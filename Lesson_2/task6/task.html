@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 6</title>
-    <script src="./script/task.js"></script>
 </head>
 <body>
-    <a href="../../index.html">go to Index page</a>
+<h1>Task 6</h1>
+<p>
+    Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
+    Обчислити вартість кожного товару окремо та загальну вартість.
+    Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+</p>
+<script>
+    let total = 0;
+    let ticketHyperText = `
+<h1>Ticket from Supermarket</h1><br>
+<h1>-----------------------</h1>
+`;
+
+    for (let i = 1; i <= 3; i++) {
+        const price = parseFloat(prompt('Enter product price', '100'));
+        const quantity = parseInt(prompt('Enter product quantity', '1'));
+        const cost = price * quantity;
+        total += cost;
+
+        ticketHyperText += `<p>Item ${i}: ${quantity} x ${price.toFixed(2)}$ = ${cost.toFixed(2)}</p><br>`;
+    }
+
+    ticketHyperText += `
+<h1>-----------------------</h1><br>
+Total: ${total.toFixed(2)}$
+`;
+
+    document.write(ticketHyperText);
+</script>
+<a href="../lesson.html">go back</a>
 </body>
 </html>

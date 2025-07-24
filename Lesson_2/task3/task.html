@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3</title>
-    <script src="./script/task.js"></script>
 </head>
 <body>
-    <a href="../../index.html">go to Index page</a>
+<h1>Task 3</h1>
+<p>
+    Задача 3. Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+</p>
+<script>
+    const price = parseInt(prompt('price per piece=', '100'));
+    const quantity = parseInt(prompt('quantity=', '3'));
+
+    const total = price * quantity;
+    const vat = total * 0.05; // 0.05 = 5% vat
+
+    document.write(`
+    <h1>
+    Total = ${total}$ <br>
+    VAT (ПДВ) = ${vat}$
+    </h1>
+    `);
+</script>
+<a href="../lesson.html">go back</a>
 </body>
 </html>

@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 5</title>
-    <script src="./script/task.js"></script>
 </head>
 <body>
-    <a href="../../index.html">go to Index page</a>
+<h1>Task 5</h1>
+<p>
+    Задача 5. Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+</p>
+<script>
+    const seconds = parseInt(prompt('seconds from the start of the day=', '7200'));
+    const minutes = seconds / 60;
+    const hours = minutes / 60;
+
+    document.write(`
+    <h1>
+    Time from the start of the day is: <br>
+    seconds = ${seconds}sec <br>
+    minutes = ${minutes}min <br>
+    hours = ${hours}hrs
+    </h1>
+    `);
+</script>
+<a href="../lesson.html">go back</a>
 </body>
 </html>
