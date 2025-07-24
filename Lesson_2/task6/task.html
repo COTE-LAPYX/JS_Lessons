@@ -15,7 +15,7 @@
 <script>
     let total = 0;
     let ticketHyperText = `
-<h1>Ticket from Supermarket</h1><br>
+<h1>Ticket from Supermarket</h1>
 <h1>-----------------------</h1>
 `;
 
@@ -25,7 +25,7 @@
         const cost = price * quantity;
         total += cost;
 
-        ticketHyperText += `<p>Item ${i}: ${quantity} x ${price.toFixed(2)}$ = ${cost.toFixed(2)}</p><br>`;
+        ticketHyperText += `<p>Item ${i}: ${quantity} x ${price.toFixed(2)}$ = ${cost.toFixed(2)}$</p><br>`;
     }
 
     ticketHyperText += `
