@@ -8,7 +8,8 @@
 <body>
 <h1>Task 4</h1>
 <p>
-    Задача 4. Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+    Дано довжину у сантиметрах.<br>
+    Визначати скільки це метрів і кілометрів.
 </p>
 <script>
     const centimeters = parseFloat(prompt('length in centimeters=', '100'));
@@ -16,11 +17,11 @@
     const kilometers = meters / 1000;
 
     document.write(`
-    <h1>
+    <p>
     centimeters = ${centimeters}cm <br>
     meters = ${meters}m <br>
     kilometers = ${kilometers}km
-    </h1>
+    </p>
     `);
 </script>
 <a href="../lesson.html">go back</a>
