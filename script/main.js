@@ -1,7 +1,7 @@
 // script to load lesson pages on index.html
 
 const lessons = [
-    [2]
+    [2], [3]
 ];
 
 let output = '<ul>';

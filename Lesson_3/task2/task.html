@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+<h1>Task 2</h1>
+<p>
+    З клавіатури вводиться ціна товару і кількість грошей.<br>
+    Якщо грошей не вистачає то відмовляємо у покупці, інакше,<br>
+    якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+</p>
+<script>
+    const productPrice = parseFloat(prompt('Enter product price', '1000'));
+    let userBalance = parseFloat(prompt('Enter user balance', '3000'));
+
+    let output;
+
+    if (userBalance > productPrice) {
+        userBalance -= productPrice;
+        output = 'You have bought the product<br>' +
+            'you have ${userBalance}$ left';
+
+        if (userBalance > 4) {
+            output += `<br>would you like to buy a lottery ticket for 4$?`;
+        }
+    } else {
+        output = 'You do not have enough money';
+    }
+
+    document.write(`<p>${output}</p>`);
+</script>
+<a href="../lesson.html">go back</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+<h1>Task 3</h1>
+<p>
+    Випадковим чином генерується число від 1 до 5.<br>
+    Спробуйте вгадати число за 2 спроби.
+</p>
+<script>
+    const randomNumber = Math.floor(Math.random() * 5) + 1;
+    const MAX_USER_TRIES = 2;
+
+    let output;
+
+    for (let i = 0; i < MAX_USER_TRIES; i++) {
+        const userNumber = parseInt(prompt('number=', '3'));
+
+        if (userNumber === randomNumber) {
+            output = `You win! the number is ${randomNumber}!`;
+            break;
+        }
+
+        alert(`You lose! You have ${MAX_USER_TRIES - i} tries left.`);
+
+        if (i === MAX_USER_TRIES - 1)
+            output = `You lose! The number is ${randomNumber}!`;
+    }
+
+    document.write(`<p>${output}</p>`);
+</script>
+<a href="../lesson.html">go back</a>
+</body>
+</html>

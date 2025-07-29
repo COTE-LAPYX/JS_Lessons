@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+<h1>Task 4</h1>
+<p>
+    З клавіатури вводиться вік людини.<br>
+    Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+</p>
+<script>
+    const userAge = parseInt(prompt('Enter your age', '30'));
+
+    let output;
+
+    if (userAge < 7) {
+        output = 'You are too young';
+    } else if (userAge < 18) {
+        output = 'You are a school boy';
+    } else if (userAge < 25) {
+        output = 'You are a student';
+    } else if (userAge < 60) {
+        output = 'You are a worker';
+    } else if (userAge >= 60) {
+        output = `You are a pensioner`;
+    }
+
+    document.write(`<p>${output}</p>`);
+</script>
+<a href="../lesson.html">go back</a>
+</body>
+</html>
