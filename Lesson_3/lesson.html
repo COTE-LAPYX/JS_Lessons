@@ -35,13 +35,13 @@ const tasks = [
 
 let output = '<ol>';
 
-for (let i = 1; i < tasks.length + 1; i++) {
+for (let i = 0; i < tasks.length; i++) {
     const taskText = tasks[i];
 
     output += `
         <li>
             <h3>
-                <a href="./task${i}/task.html">task ${i}</a>
+                <a href="./task${i + 1}/task.html">task ${i + 1}</a>
             </h3>
             <p>${taskText}</p>
         </li>`;
